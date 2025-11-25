@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ThemeToggle from "../UI/ThemeToggle";
 
 export default function Header() {
   return (
@@ -12,7 +11,7 @@ export default function Header() {
         <Link href="/about">Sobre mí</Link>
         <Link href="/contact">Contacto</Link>
 
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
       </nav>
     </header>
   );

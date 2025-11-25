@@ -1,0 +1,41 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+:root {
+  --background: #f5f6f8;
+  --foreground: #050608;
+  --muted: #6b7180;
+  --surface: rgba(255, 255, 255, 0.9);
+  --border-color: rgba(9, 12, 17, 0.08);
+}
+
+.dark {
+  --background: #04060c;
+  --foreground: #f5f7ff;
+  --muted: #9ea5ba;
+  --surface: rgba(14, 16, 24, 0.8);
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  background-image: radial-gradient(
+      circle at top,
+      rgba(37, 99, 235, 0.08),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(14, 165, 233, 0.12),
+      transparent 40%
+    );
+  background-attachment: fixed;
+}
+
+::selection {
+  background-color: rgba(56, 189, 248, 0.4);
+  color: var(--foreground);
+}
